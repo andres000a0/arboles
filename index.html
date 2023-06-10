@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi página web</title>
+  <link rel="stylesheet" href="./assets/Styles.css">
+</head>
+<body>
+  <header class="banner">
+    <h1>Bienvenido a nuestra página web</h1>
+  </header>
+
+  <div class="tabs">
+    <ul>
+      <li data-tab="yarumal">Yarumal</li>
+      <li data-tab="santafe">Santa Fé de Antioquia</li>
+      <li data-tab="caucasia">Caucasia</li>
+      <li data-tab="belmira">Belmira</li>
+      <li data-tab="bello">Bello</li>
+      <li data-tab="caramanta">Caramanta</li>
+    </ul>
+  </div>
+
+  <main>
+    <div id="yarumal" class="tab-content">
+      <h2>Contenido de Yarumal</h2>
+      <p>Información sobre Yarumal.</p>
+    </div>
+    <div id="santafe" class="tab-content">
+      <h2>Contenido de Santa Fé de Antioquia</h2>
+      <iframe class="santafe" src="./tabla/SantaFeDeAntioquia.html" frameborder="0"></iframe>
+      <img src="./assets/img/graficaSantafeDeAntioquia.png" alt="">
+    </div>
+    <div id="caucasia" class="tab-content">
+      <h2>Contenido de Caucasia</h2>
+      <iframe class="caucasia" src="./tabla/Caucasia.html" frameborder="0"></iframe>
+      <img src="./assets/img/graficaCaucasia.png" alt="">
+    </div>
+    <div id="belmira" class="tab-content">
+      <h2>Contenido de Belmira</h2>
+      <iframe class="belmira-info" src="./tabla/La Salazar.html" frameborder="0"></iframe>
+      <img src="./assets/img/graficaLaSalazar.png" alt="">
+      <iframe class="belmira-info" src="./tabla/Rio Arriba.html" frameborder="0"></iframe>
+      <img src="./assets/img/graficaRioArriba.png" alt="">
+    </div>
+    <div id="bello" class="tab-content">
+      <iframe class="belmira-info" src="./tabla/quitasol.html" frameborder="0"></iframe>
+      <img src="./assets/img/graficaQuitasol.png" alt="">
+    </div>
+    <div id="caramanta" class="tab-content">
+      <h2>Contenido de Caramanta</h2>
+      <p>Información sobre Caramanta.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Desarrollado por:</p>
+    <ul>
+      <li><a href="https://github.com/miembro1">Miembro 1</a></li>
+      <li><a href="https://github.com/miembro2">Miembro 2</a></li>
+      <li><a href="https://github.com/miembro3">Miembro 3</a></li>
+    </ul>
+  </footer>
+
+  <script src="./controller/tabs.js"></script>
+</body>
+</html>
